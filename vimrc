@@ -40,7 +40,7 @@ function SetTags()
 	endwhile
 	
 	if filereadable("tags")
-		execute "set tags=" . get cwd() . "/tags"
+		execute "set tags=" . getcwd() . "/tags"
 	endif
 
 	execute "cd " . curdir
